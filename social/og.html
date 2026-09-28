@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #272727;
+    color: #f2f2f2;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    position: relative;
+  }
+  .wrap {
+    position: absolute; inset: 0;
+    display: flex; align-items: center;
+    padding: 0 96px 0 72px;
+    gap: 40px;
+  }
+  .logo { width: 360px; height: 360px; flex: none; mix-blend-mode: lighten; }
+  .text { display: flex; flex-direction: column; gap: 0; }
+  h1 {
+    color: #d3d3d3;
+    font-size: 104px;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    margin-bottom: 28px;
+  }
+  .tagline {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #f2f2f2;
+    margin-bottom: 40px;
+  }
+  .handle {
+    align-self: flex-start;
+    display: inline-flex; align-items: center; gap: 14px;
+    padding: 14px 30px 14px 24px;
+    border-radius: 999px;
+    background: #fa4345;
+    color: #1a1a1a;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  .handle svg { width: 36px; height: 36px; }
+  .handle + .handle { margin-top: 18px; }
+  .handle.cyan { background: #08f8f9; }
+  .stripe { position: absolute; left: 0; right: 0; bottom: 0; height: 12px; display: flex; }
+  .stripe span { flex: 1; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <img class="logo" src="../logo.jpg" alt="">
+    <div class="text">
+      <h1>conversae.org</h1>
+      <p class="tagline">Chega junto, vem pensar coletivo!</p>
+      <span class="handle cyan">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        coletivo@conversae.org
+      </span>
+      <span class="handle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+        @conversaesm
+      </span>
+    </div>
+  </div>
+  <div class="stripe"><span style="background:#fa4345"></span><span style="background:#08f8f9"></span></div>
+</body>
+</html>
